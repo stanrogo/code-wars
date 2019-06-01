@@ -1,0 +1,14 @@
+mov   a, 2            ; value1
+call  func1
+call  print
+end
+
+func1:
+    call  func2
+    ret
+
+func2:
+    ret
+
+print:
+    msg 'This program should return -1'
